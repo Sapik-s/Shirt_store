@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 382px 0 550px;
+}
+
+.main {
+  background: url("../img/background/man.png") center center/cover no-repeat;
+  min-height: 731px;
+}
+
+.header {
+  display: flex;
+}
+.header__information-wrapper {
+  display: flex;
+  align-items: flex-start;
+}

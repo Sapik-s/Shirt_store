@@ -1,0 +1,103 @@
+.best-product
+    &__circle
+        width: 13px
+        display: flex
+        margin: 0 auto
+    &__wrapper-links
+        list-style-type: none
+        display: flex
+        justify-content: center
+        padding: 0
+    &__links
+        padding: 0 13px
+        cursor: pointer
+        text-transform: uppercase
+        font-size: 13px
+        color: #333
+        position: relative
+        text-decoration: none
+        &:after
+            display: block
+            content: ""
+            height: 1px
+            width: 0%
+            background-color: #000000
+            transition: width 0.4s ease-in-out
+        &:focus
+            width: 100%
+        &:hover
+            &:after
+                width: 100%
+    &__links_active
+        &:after
+            width: 100%
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+    &__wrapper-card
+        margin: 0 10px 50px 10px
+        max-width: 301px
+    // Первая половина карточки
+    &__first-half
+        max-height: 301px
+        position: relative
+    &__img
+        max-width: 100%
+        height: 301px
+        display: block
+        margin: 0 auto
+    &__sale-in-img
+        position: absolute
+        top: 14px
+        color: #ffffff
+        font-size: 14px
+        background-color: #000000
+        width: 57px
+        height: 30px
+        border-radius: 0 3px 3px 0
+        transform: rotate(90deg)
+        padding: 5px 12px
+    &__text-in-img
+        position: absolute
+        height: 19px
+        width: 57px
+        background-color: #ef6644
+        color: #ffffff
+        font-size: 10px
+        top: 0
+        right: 0
+        padding: 4px 9px
+        line-height: 12px
+        border-radius: 0px 5px
+    // Вторая половина карточки
+    &__second-half
+        position: relative
+    &__articul
+        padding-top: 21px
+        font-weight: 400
+        font-size: 18px
+    &__old-price
+        position: absolute
+        top: 5px
+        right: 0
+        font-size: 14px
+        text-decoration-line: line-through
+        color: #555555
+    &__new-price
+        position: absolute
+        top: 21px
+        right: 0
+        font-weight: 600
+        font-size: 18px
+        line-height: 27px
+    &__structure
+        font-size: 13px
+        font-weight: 300
+        flex-wrap: nowrap
+        margin-top: 18px
+    .container
+        max-width: 1284px
+    &__all
+        display: none
+    &__all_active
+        display: block

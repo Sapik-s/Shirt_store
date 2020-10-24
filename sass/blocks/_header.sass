@@ -1,0 +1,46 @@
+.header
+    padding-top: 21px
+    height: 53px
+    background-color: rgba(56, 56, 56, 0.493)
+    border-bottom: 1px solid rgba(102, 102, 102, 0.5)
+
+    // Общая обёртка
+    &__wrapper
+        display: flex
+        justify-content: space-between
+
+    // Обёртка с информацией
+    &__information-wrapper
+        display: flex
+        align-items: flex-start
+        img
+            margin: 0 10px
+            margin-top: 4px
+    &__work-time-icon
+        width: 12px
+    &__phone-icon
+        padding-top: 1px
+        width: 9px
+
+    // Обёртка ссылок
+    &__link-wrapper
+        display: flex
+
+    // Применение микса со стилями для текста
+    &__phone, .header__work-time, .header__link
+        +header-style-text
+
+    a
+        border-right: 1px #ffff solid
+        padding-right: 15px
+        text-decoration: none
+        &:last-child
+            border-right: none
+
+    &__link
+        display: flex
+        align-items: center
+        +animation-color
+        img
+            margin: 0 5px 0 10px
+            width: 13px

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 382px 0 550px;
+}

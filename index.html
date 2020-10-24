@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt</title>
+    <!-- Подключение jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Анимация -->
+    <link rel="stylesheet" href="/sass/libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <section class="main">
+
+        <header class="header">
+
+            <div class="container">
+    
+                <div class="header__wrapper">
+
+                    <div class="header__information-wrapper">
+    
+                        <img class="header__phone-icon" src="icons/header/phone-icon.ico" alt="телефон">
+                        <a class="header__phone" href="tel:89183184564">+8 (918) 318-45-64</a>
+                        
+                        
+                        <img class="header__work-time-icon" src="/icons/header/clock-icon.png" alt="часы">
+                        <div class="header__work-time">Ежедневно: 6:00-16:00</div>
+                        
+                    </div>
+        
+                    <div class="header__link-wrapper">
+                        
+                        <a class="header__link" href="#"><img src="/icons/header/user-icon.png">Мой аккаунт</img></a>
+    
+                        <a class="header__link" href="#"><img src="/icons/header/cart-icon.png">Корзина</img></a>
+    
+                        <a class="header__link" href="#"><img src="/icons/header/heart-icon.png">Мой список желайний </img></a>
+    
+                        <a class="header__link" href="#"><img src="/icons/header/dollar-icon.png">Creck out</img></a>
+    
+                        <a class="header__link" href="#"><img src="/icons/header/lock-icon.png">Вход</img></a>        
+                    </div>
+
+                </div>
+    
+            </div>
+    
+        </header>
+
+        <div class="nav">
+
+            <div id="nav" class="nav__wrapper">
+
+                <a href="#"><img src="icons/logo/logo.png" alt="" class="nav__logo"></a>
+
+                <div class="nav__nav-wrapper">
+
+                    <ul class="nav__list">
+
+                        <li>
+
+                            <a href="#" class="nav__link">Главная</a>
+
+                        </li>
+
+                        <!-- Каталог и всё что в нём -->
+                        <li>
+
+                            <a href="#" class="nav__link">Каталог</a>
+
+                            <!-- Первый уровень -->
+                            <ul class="animated animate__fadeIn nav__sub-list">
+
+                                <div class="nav__sleeve-wrapper">
+
+                                    <!-- Короткий рука -->
+                                    <div class="nav__head-link">Короткий рукав</div>
+
+                                    <hr class="nav__hr">
+
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Классика</a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Приталенные</a>
+
+                                    </li>
+
+                                </div>
+
+                                <div class="nav__sleeve-wrapper">
+
+                                    <!-- Длинный рукав -->
+                                    <div class="nav__head-link">Длинный рукав</div>
+
+                                    <hr class="nav__hr">
+
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Классика</a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Приталенные</a>
+
+                                    </li>
+
+                                </div>
+
+                                <div class="nav__sleeve-wrapper">
+
+                                    <!-- Поло -->
+                                    <div class="nav__head-link">Рубашки поло</div>
+
+                                    <hr class="nav__hr">
+
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Поло</a>
+
+                                    </li>
+
+                                </div>
+
+                                <div class="nav__accessories-wrapper">
+
+                                    <!-- Длинный рукав -->
+                                    <div class="nav__head-link">Аксессуары</div>
+
+                                    <hr class="nav__hr">
+
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Галстуки</a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Бабочки</a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Запонки</a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="nav__sub-link">Шарфы</a>
+
+                                    </li>
+
+                                </div>
+
+                                <div class="nav__image">
+
+                                    <a href="#"><img src="img/nav/new.png" alt="" class="nav__new"></a>
+
+                                    <a href="#"><img src="img/nav/sale.png" alt="" class="nav__sale"></a>
+
+                                </div>
+
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav__link">Новинки</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav__link">Распродажа</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav__link">Сотрудничество с нами</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="main__wrapper-title">
+
+                <h1 class="title">Мужские рубашки</h1>
+                <h2 class="title title__sub-title">Оптовая продажа</h2>
+                <button class="button">Перейти в каталог</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="blocks-links">
+
+        <div class="container">
+
+            <div class="blocks-links__blocks-up">
+
+                <a href="#"><img src="img/blocks-links/test.jpg" alt="" class="blocks-links__img"></a>
+                <a href="#"><img src="img/blocks-links/test.jpg" alt="" class="blocks-links__img"></a>
+                <a href="#"><img src="img/blocks-links/test.jpg" alt="" class="blocks-links__img"></a>
+
+            </div>
+            <div class="blocks-links__blocks-down">
+
+                <a href="#"><img src="img/blocks-links/test.jpg" alt="" class="blocks-links__img"></a>
+                <a href="#"><img src="img/blocks-links/test.jpg" alt="" class="blocks-links__img"></a>
+                <a href="#"><img src="img/blocks-links/test.jpg" alt="" class="blocks-links__img"></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="best-product">
+
+        <div class="container">
+
+            <h3 class="best-product__best-title">Популярный товар</h3>
+
+            <img class="best-product__circle" src="icons/title/circle-title.png" alt="">
+
+            <ul class="best-product__wrapper-links">
+
+                <li class="best-product__links best-product__links_active">Все товары</li>
+                <li class="best-product__links">Рубашки</li>
+                <li class="best-product__links">Поло</li>
+                <li class="best-product__links">Аксессуары</li>
+
+            </ul>
+
+            <!-- Все товары -->
+            <div class="best-product__all best-product__all_active">
+
+                <div class="best-product__wrapper">
+
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/s.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+
+                        <div class="modal">
+
+                            <div class="modal__wrapper-left-block">
+                                <img src="img/shirt/shirt.png" alt="" class="modal__main-picture">
+
+                                <div class="modal__wrapper-img">
+
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+
+                                </div>
+                            </div>
+
+                            <div class="best-product__wrapper-right-block">
+
+                            </div>
+
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <!-- Рубашки -->
+            <div class="best-product__all">
+
+                <div class="best-product__wrapper">
+
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/shirt/shirt.png" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <!-- Поло -->
+            <div class="best-product__all">
+
+                <div class="best-product__wrapper">
+
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/polo/polo.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <!-- Аксессуары -->
+            <div class="best-product__all">
+
+                <div class="best-product__wrapper">
+
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка без скидки -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                        </div>
+    
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Карточка со скидкой -->
+                    <div class="best-product__wrapper-card">
+    
+                        <div class="best-product__first-half">
+                            <img class="best-product__img" src="img/accessories/studs.jpg" alt="">
+                                <div class="best-product__sale-in-img">sale</div>
+                                <div class="best-product__text-in-img">-70 руб.</div>
+                        </div>
+                        
+                        <div class="best-product__second-half">
+                            <div class="best-product__articul">MH938B k (L-5XL)</div>
+                            <div class="best-product__old-price">720 руб.</div>
+                            <div class="best-product__new-price">650 руб.</div>
+                            <div class="best-product__structure">Сорочка мужская: 35%хлопок 65%модал</div>
+                            <button class="buttons buttons__in-basket">В корзину</button>
+                            <a href="#"><button class="buttons buttons__more">Подробнее</button></a>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
