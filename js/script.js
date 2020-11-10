@@ -39,4 +39,122 @@ jQuery(document).ready(function($) {
 		// Обёртка конкретный табов по катериям, для триатлона или для беги и подобное... ( .find('div.catalog__tabs') )
 		// Тоже самое что и сверху, только добавляем класс активности ( .removeClass('catalog__tabs_active') ) ----> .eq($(this).index()).addClass('catalog__tabs_active');
 		  .closest('div.container').find('div.best-product__all').removeClass('best-product__all_active').eq($(this).index()).addClass('best-product__all_active');
-	});
+  });
+
+var cart = {}; // Корзина
+  
+function init() {
+    //вычитуем файл goods.json
+    //$.getJSON("goods.json", goodsOut);
+	let json = {
+    "MH938B k (L-5XL)" : {
+        "name" : "MH938B k (L-5XL)",
+        "cost" : "650 руб.",
+        "description" : "Сорочка мужская: 35%хлопок 65%модал",
+        "order" : 1,
+        "img" : "shirt.png"
+    },
+    "MH834AH (42-47)" : {
+        "name" : "MH834AH (42-47)",
+        "cost" : "450 руб.",
+        "description" : "Сорочка мужская 90%хлопок 10%полиэстер",
+        "order" : 2,
+        "img" : "MH834AH (42-47).jpg"
+    },
+    "VDU001CW-1 (29-36)" : {
+        "name" : "VDU001CW-1 (29-36)",
+        "cost" : "580 руб.",
+        "description" : "Сорочка детская: 35%хлопок 65%модал",
+        "order" : 3,
+        "img" : "VDU001CW-1 (29-36).png"
+    },
+    "MM002TM-1 (M-4XL)" : {
+        "name" : "MM002TM-1 (M-4XL)",
+        "cost" : "780 руб.",
+        "description" : "Сорочка мужская 80%хлопок 20%стрейч",
+        "order" : 4,
+        "img" : "MM002TM-1 (M-4XL).jpg"
+    },
+    "VDU001CWasd29-36)" : {
+        "name" : "VDU001CW-1 (29-36)",
+        "cost" : "580 руб.",
+        "description" : "Сорочка детская: 35%хлопок 65%модал",
+        "order" : 5,
+        "img" : "VDU001CW-1 (29-36).png"
+    },
+    "MM002Tsd1 (M-4XL)" : {
+        "name" : "MM002TM-1 (M-4XL)",
+        "cost" : "780 руб.",
+        "description" : "Сорочка мужская 80%хлопок 20%стрейч",
+        "order" : 6,
+        "img" : "MM002TM-1 (M-4XL).jpg"
+    }
+};
+
+goodsOut(json);
+}
+
+function goodsOut(data) {
+	// вывод на страницу
+	console.log(data);
+	let out='';
+	for (var key in data) {
+		out +='<div class="shop-catalog__wrapper-card">';
+		out +='<div class="shop-catalog__first-half">';
+		out +=`<img src="img/shirt/${data[key].img}" alt="">`;
+		out +='</div>';
+
+		out +='<div class="shop-catalog__second-half">';
+		out +=`<div class="name">${data[key].name}</div>`;
+		out +=`<div class="cost">${data[key].cost}</div>`;
+		out +=`<div class="description">${data[key].description}</div>`;
+		out +=`<button class="buttons buttons__in-basket" data-id="${key}">В корзину</button>`;
+		out +='<a href="#"><button class="buttons buttons__more">Подробнее</button></a>';
+		out +='</div>';
+		out +='</div>';
+	}
+	$('.goods-out').html(out);
+	$('.buttons__in-basket').on('click', buttonsButtonsInBasket);
+}
+
+function buttonsButtonsInBasket() {
+	// Добавляем товар в корзину
+	var id = $(this).attr('data-id');
+	// console.log(id);
+	if (cart[id]==undefined) {
+		cart[id] = 1; // Если в корзине нет товара, то делаем равным 1
+	}
+	else {
+		cart[id]++; // Если такой товар есть, увеличиваю на 1
+	}
+	showMiniCart();
+	saveCart();
+}
+
+function saveCart() {
+	// Сохраняю корзину в localStorage
+	localStorage.setItem('cart', JSON.stringify(cart)); // Корзину в строку
+}
+
+function showMiniCart() {
+	// Показываю мини корзину
+	var out="";
+	for (var key in cart) {
+		out += key +' --- '+ cart[key]+'<br>';
+	}
+	$('.mini-cart').html(out);
+}
+
+function loadCart() {
+	// Проверяю есть ли в localStorage запись cart
+	if (localStorage.getItem('cart')) {
+		// Если есть - расшифровываю и записываю переменную cart
+		cart = JSON.parse(localStorage.getItem('cart'));
+		showMiniCart();
+	}
+}
+
+$(document).ready(function () {
+	init();
+	loadCart();
+});

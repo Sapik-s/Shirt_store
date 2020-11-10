@@ -1,0 +1,61 @@
+.goods-out::after
+    content: ""
+    display: flex
+    clear: both
+.goods-out
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    img
+        max-width: 301px
+        height: 301px
+        margin: 0 auto
+        border-radius: 3%
+.cost
+    position: absolute
+    top: 21px
+    right: 0
+    font-weight: 600
+    font-size: 18px
+    line-height: 27px
+.description
+    font-size: 13px
+    font-weight: 300
+    flex-wrap: nowrap
+    padding-top: 18px
+.name
+    padding-top: 21px
+    font-weight: 400
+    font-size: 18px
+.img
+    max-width: 301px
+    height: 100%
+
+.shop-catalog
+    display: flex
+    padding: 98px 0 0 0
+
+    // фильтр
+    &__filter
+        display: flex
+    &__test-block
+        display: flex
+        width: 240px
+        height: 500px
+        background-color: #000000
+        color: white
+        padding: 20px
+    &__wrapper-filter-goods
+        display: flex
+
+    // Карточки
+    &__wrapper-card
+        margin: 0 10px 50px 10px
+        max-width: 301px
+    &__second-half
+        position: relative
+    &__first-half
+        max-height: 301px
+        position: relative
+.mini-cart
+    color: #000000
