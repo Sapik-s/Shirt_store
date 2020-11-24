@@ -44,54 +44,8 @@ jQuery(document).ready(function($) {
 var cart = {}; // Корзина
   
 function init() {
-    //вычитуем файл goods.json
-    //$.getJSON("goods.json", goodsOut);
-	let json = {
-    "MH938B k (L-5XL)" : {
-        "name" : "MH938B k (L-5XL)",
-        "cost" : "650 руб.",
-        "description" : "Сорочка мужская: 35%хлопок 65%модал",
-        "order" : 1,
-        "img" : "shirt.png"
-    },
-    "MH834AH (42-47)" : {
-        "name" : "MH834AH (42-47)",
-        "cost" : "450 руб.",
-        "description" : "Сорочка мужская 90%хлопок 10%полиэстер",
-        "order" : 2,
-        "img" : "MH834AH (42-47).jpg"
-    },
-    "VDU001CW-1 (29-36)" : {
-        "name" : "VDU001CW-1 (29-36)",
-        "cost" : "580 руб.",
-        "description" : "Сорочка детская: 35%хлопок 65%модал",
-        "order" : 3,
-        "img" : "VDU001CW-1 (29-36).png"
-    },
-    "MM002TM-1 (M-4XL)" : {
-        "name" : "MM002TM-1 (M-4XL)",
-        "cost" : "780 руб.",
-        "description" : "Сорочка мужская 80%хлопок 20%стрейч",
-        "order" : 4,
-        "img" : "MM002TM-1 (M-4XL).jpg"
-    },
-    "VDU001CWasd29-36)" : {
-        "name" : "VDU001CW-1 (29-36)",
-        "cost" : "580 руб.",
-        "description" : "Сорочка детская: 35%хлопок 65%модал",
-        "order" : 5,
-        "img" : "VDU001CW-1 (29-36).png"
-    },
-    "MM002Tsd1 (M-4XL)" : {
-        "name" : "MM002TM-1 (M-4XL)",
-        "cost" : "780 руб.",
-        "description" : "Сорочка мужская 80%хлопок 20%стрейч",
-        "order" : 6,
-        "img" : "MM002TM-1 (M-4XL).jpg"
-    }
-};
-
-goodsOut(json);
+  //вычитуем файл goods.json
+  $.getJSON("goods.json", goodsOut);
 }
 
 function goodsOut(data) {
