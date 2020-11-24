@@ -21,13 +21,34 @@ function showCart() {
             var goods = data;
             var out = '';
             for (var id in cart) {
+                out += '<div class="page-cart__wrapper-elements">';
+
+                out += '<div class="page-cart__cross">';
                 out += `<button data-id="${id}" class="del-goods">x</button>`;
+                out +='</div>';
+
+                out += '<div class="page-cart__img">';
                 out += `<img src="img\\shirt\\${goods[id].img}">`;
+                out +='</div>';
+
+                out += '<div class="page-cart__name">';
                 out += `${goods[id].name  }`;
-                out += `  <button data-id="${id}" class="minus-goods">-</button>`  ;
+                out += '</div>';
+
+                out += '<div class="page-cart__cost">';
+                out += `   <button data-id="${id}" class="minus-goods">-</button>`   ;
                 out += ` ${cart[id]  }`;
-                out += `  <button data-id="${id}" class="plus-goods">+</button>`  ;
+                out += `   <button data-id="${id}" class="plus-goods">+</button>`   ;
+                out +='</div>';
+
+                out += '<div class="page-cart__description">';
+                out +=`${goods[id].description}`;
+                out +='</div>';
+
+                out += '<div class="page-cart__sum">';
                 out += cart[id]*goods[id].cost;
+                out +='</div>';
+                out +='</div>';
                 out += '<br>';
             }
             $('.main-cart').html(out);

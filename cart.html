@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirt</title>
-    <!-- Подключение jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Шрифт -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Анимация -->
@@ -216,16 +214,18 @@
 
             <div class="container">
 
-                <div class="page-cart__wrapper-text">
-                    <div class="page-cart__cross"></div>
-                    <div class="page-cart__img"></div>
-                    <div class="page-cart__name">Артикул товара</div>
-                    <div class="page-cart__cost">Количество линеек</div>
-                    <div class="page-cart__number">Цена за линейку</div>
-                    <div class="page-cart__sum">Цена</div>
+
+                <div class="page-cart__wrapper-name-nav">
+                    <div class="page-cart__cross-h"></div>
+                    <div class="page-cart__img-h"></div>
+                    <div class="page-cart__name-h">Артикул товара</div>
+                    <div class="page-cart__cost-h">Кол-во линеек</div>
+                    <div class="page-cart__description">Состав</div>
+                    <div class="page-cart__sum-h">Цена</div>
                 </div>
-    
+
                 <div class="main-cart"></div>
+    
                 <!-- <div class="email-field">
                     <p>Имя: <input type="text" id="ename"></p>
                     <p>Email: <input type="text" id="email"></p>
@@ -239,6 +239,7 @@
 
     </section>
 
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/cart.js"></script>
 </body>
